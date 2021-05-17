@@ -1,14 +1,17 @@
 # eslint-config-react
+
 ESLint configuration for React Project. Easy to install and configure, it follows the best code standards from airbnb and uses prettier configuration on code format. Integrated with our [prettier configuration](https://github.com/inc4/prettier-config) configuration
 
 ## Purpose
-This configuration uses airbnb and Prettier configuration plus some extra rules that we find handy for *React* applications
+
+This configuration uses airbnb and Prettier configuration plus some extra rules that we find handy for _React_ applications
 
 For more information you can check [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) documentations as well the [airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) and [prettier](https://github.com/prettier/eslint-config-prettier) configurations for more information
 
 This package integrates the Prettier rules with ESLint using our configuration. You can check it at [@inc4/prettier-configuration](https://github.com/inc4/prettier-config)
 
 ## How to install
+
 You need ESLint and Prettier installed as development dependencies on your project. You can install them by using **npm** or **yarn**.
 
 #### NPM
@@ -18,16 +21,19 @@ npm install --save-dev eslint prettier
 ```
 
 Install all peer dependencies of our configuration, these can be listed by the command:
+
 ```
 npm info "@inc4/eslint-config-react@latest" peerDependencies
 ```
 
-If running *npm > v5* you install them by:
+If running _npm > v5_ you install them by:
+
 ```
 npx install-peerdeps --dev @inc4/eslint-config-react
 ```
 
-If *npm < v5*, Linux/OSX users can run:
+If _npm < v5_, Linux/OSX users can run:
+
 ```
 (
   export PKG=@inc4/eslint-config-react;
@@ -42,17 +48,21 @@ yarn add eslint prettier -D
 ```
 
 Install the peer dependencies tool, by running:
+
 ```
 yarn global add install-peerdeps
 ```
 
 and after that run the following command to install the project's config:
+
 ```
-install-peerdeps @inc4/eslint-config-react
+install-peerdeps @inc4/eslint-config-react -D
 ```
 
 ## How to use
+
 To configure ESLinter and Prettier you can add to your `package.json`
+
 ```
 "eslintConfig": {
   "extends": "@inc4/react",
@@ -61,6 +71,7 @@ To configure ESLinter and Prettier you can add to your `package.json`
 ```
 
 Or create a `.eslintrc` and `.prettierrc` files and add `extends: "@inc4/react"` and `"@inc4/prettier-config"` respectivally. As an example:
+
 ```
 <!-- .eslintrc -->
 {
@@ -73,6 +84,7 @@ Or create a `.eslintrc` and `.prettierrc` files and add `extends: "@inc4/react"`
 ```
 
 To use ESLint and Prettier you can add this scripts to your `package.json` file
+
 ```
 "lint": "eslint ./ --ignore-path .gitignore",
 "lint:fix": "npm run lint -- --fix",
@@ -80,6 +92,7 @@ To use ESLint and Prettier you can add this scripts to your `package.json` file
 ```
 
 ## Contributing
+
 How to [contribute](/CONTRIBUTING.MD) to this open source library
 
 ## License
